@@ -1,11 +1,19 @@
 package br.com.alura.mvc.mudi.dto;
 
+
+import javax.validation.constraints.NotBlank;
+
 import br.com.alura.mvc.mudi.model.Pedido;
 
+// Classe que recebe os dados do formulário
 public class RequisicaoNovoPedido {
-
+	
+	// Nome dos atributos devem ser os mesmos do 'name' dos inputs
+	@NotBlank
 	private String nomeProduto;
+	@NotBlank
 	private String urlProduto;
+	@NotBlank
 	private String urlImagem;
 	private String descricao;
 
