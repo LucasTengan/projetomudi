@@ -37,7 +37,7 @@ public class PedidoController {
 			return "pedido/formulario";
 		}
 		
-		// Retorna o username do usuario
+		// Retorna o username do usuario logado
 		String username = SecurityContextHolder.getContext().getAuthentication().getName();
 		User user = userRepository.findByUsername(username);
 		
